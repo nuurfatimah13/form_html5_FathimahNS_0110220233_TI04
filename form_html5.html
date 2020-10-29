@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        .right{
+            margin-left: auto;
+            margin-right: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <form action="form.html" method="POST">
+        <header style="color: green; font-family: sans-serif;">
+            <h1>Student Registration Form</h1>
+        </header>
+        <br><br>
+        <table class="right">
+            <tr>
+                <td>Date</td>
+                <td><input type="date" name="date" value="" required></td>
+            </tr>
+        </table>
+        <br><br>
+        <h2 style="font-family: sans-serif;">PERSONAL INFORMATION</h2>
+        <hr>
+        <table>
+            <tr>
+                <td><label>NAME</label></td>
+                <td><input type="text" name="name" value="" style="width: 665px;" required></td>
+            </tr>
+            <tr>
+                <td><label>DATE OF BIRTH</label></td>
+                <td><input type="date" name="birth" value="" style="width: 665px;" required></td>
+            </tr>
+        </table>
+        <br>
+        <h2 style="font-family: sans-serif;">CONTACT INFORMATION</h2>
+        <hr>
+        <table>
+            <tr>
+                <td>ADDRESS</td>
+                <td colspan="2"><input type="text" name="address" value="" style="width: 380px;" required></td>
+            </tr>
+            <tr>
+                <td>CITY</td>
+                <td><input type="text" name="city" value="" required></td>
+                <td>PROVINCE/STATE</td>
+                <td><input type="text" name="state" value="" required></td>
+            </tr>
+            <tr>
+                <td>ZIP CODE</td>
+                <td><input type="number" name="zipcode" value=""></td>
+                <td>COUNTRY</td>
+                <td><input type="text" name="country" value="" required></td>
+            </tr>
+            <tr>
+                <td>PHONE</td>
+                <td><input type="tel" name="phone" value="" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"></td>
+                <td>EMAIL</td>
+                <td><input type="email" name="email" value="" required></td>
+            </tr>
+            <tr>
+                <td>Membership</td>
+                <td>
+                    <input type="radio" name="member" value="regular" required>Regular
+                    <input type="radio" name="member" value="premium" required>Premium
+                    <input type="radio" name="member" value="vip" required>VIP
+                </td>
+            </tr>
+        </table>
+        <br>
+        <h2 style="font-family: sans-serif;">COURSE DETAILS</h2>
+        <hr>
+        <table>
+            <tr>
+                <td>COURSE NAME</td>
+                <td><input type="text" name="course" value="" required></td>
+            </tr>
+            <tr>
+                <td>PAYMENT DETAILS</td>
+                <td>
+                    <input type="radio" name="payment" value="cash" required>Cash
+                    <input type="radio" name="payment" value="cheque" required>Cheque
+                    <input type="radio" name="payment" value="credit" required>Credits
+                </td>
+            </tr>
+            <tr>
+                <td>COMMENTS</td>
+                <td><input type="text" name="comments" value="" style="width: 665px;"></td>
+            </tr>
+        </table>
+        <br>
+        <footer>
+            <table>
+                <tr>
+                    <td>
+                        <textarea name="signature" cols="53" rows="5" placeholder="STUDENT'S SIGNATURE"></textarea>
+                    </td>
+                    <td>
+                        <textarea name="validated" cols="53" rows="5" placeholder="VALIDATED BY"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <br/>
+                <input type="submit" value="Submit">
+        </footer>
+    </form>
+    </div>
+</body>
+</html>    
